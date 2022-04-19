@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}Page 13{% endblock %}
+
+{% block content %}
+  <h1>Question 13</h1>
+
+ <form action={{ url_for("renderPage14") }} method="POST">
+  Type another PAST TENSE VERB<br>
+  <input type="text" name="13PASTTENSEVERB">
+  <input type="submit" value="Submit">
+ </form>
+
+
+
+{% endblock %}
