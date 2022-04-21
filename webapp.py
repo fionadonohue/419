@@ -96,10 +96,10 @@ def renderPage15():
     session["14PLACE"]=request.form['14PLACE']
     return render_template('page15.html')
 
-    @app.route('/results',methods=['GET','POST'])
-    def renderResults():
-        session["15VERB"]=request.form['15VERB']
-        return render_template('results.html')
+@app.route('/results',methods=['GET','POST'])
+def renderResults():
+    session["15VERB"]=request.form['15VERB']
+    return render_template('results.html')
 
 if __name__=="__main__":
     app.run(debug=False)
