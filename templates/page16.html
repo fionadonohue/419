@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block title %}Chose A Story{% endblock %}
+
+{% block content %}
+  <h1>Choose a Story</h1>
+
+
+  <form method="POST" action={{ url_for('renderResults') }}>
+     <button type="submit" name="RESULTS1">Trip to Disney World</button>
+ </form>
+
+ <form method="POST" action={{ url_for('renderResults2') }}>
+    <button type="submit" name="RESULTS2">Visiting the Zoo</button>
+</form>
+
+<form method="POST" action={{ url_for('renderResults3') }}>
+    <button type="submit" name="RESULTS3">Amusement Park</button>
+</form>
+
+<form method="POST" action={{ url_for('renderResults4') }}>
+    <button type="submit" name="RESULTS4">Arcade</button>
+</form>
+
+{% endblock %}
